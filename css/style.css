@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ddd;
+    font-family: 'Work Sans', sans-serif;
+}
+
+ul,
+li{
+    list-style: none;
+}
+
+button{
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.container{
+    max-width: 840px;
+    padding: 0 20px;
+    margin: 100px auto 0;
+}
+
+.title{
+    user-select: none;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    background-color: rgba(79, 0, 95, 0.801);
+    border-radius: 6px 6px 0 0;
+}
+
+.inner-content{
+    padding: 20px;
+    min-height: 200px;
+    background-color: #fff;
+    border-radius: 0 0 6px 6px;
+}
+
+.text-explained{
+    user-select: none;
+    padding: 10px 0;
+    color: rgba(79, 0, 95, 0.801);
+    font-weight: 600;
+}
+
+#add-todo{
+    width: 80%;
+    margin-right: 30px;
+    padding: 10px 2px;
+    border: none;
+    border-bottom: 1px solid rgba(79, 0, 95, 0.801);
+}
+#add-todo::placeholder{
+    font-family: 'Work Sans', sans-serif;
+}
+#add-todo:focus{
+    outline: none;
+    font-family: inherit;
+}
+
+.button-add{
+    background-color: rgba(79, 0, 95, 0.801);
+    color: #fff;
+    font-weight: 600;
+    padding: 10px;
+    border: none;
+    font-family: inherit;
+    border-radius: 6px;
+}
+
+.button-add:hover{
+    background-color: #ddd;
+    color: rgba(79, 0, 95, 0.801);
+}
+
+.button-add:active{
+    padding: 8px;
+}
+
+.todo-list{
+    padding: 40px 55px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.todo{
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(218, 196, 223, 0.473);
+}
+
+.delete-todo{
+    border: none;
+    background-color: transparent;
+}
+
+img{
+    width: 26px;
+    height: 26px;
+}
+
+span{
+    margin-right: 10px;
+}
