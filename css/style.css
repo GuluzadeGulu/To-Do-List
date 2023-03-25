@@ -65,7 +65,8 @@ button{
     font-family: inherit;
 }
 
-.button-add{
+#button-add{
+    user-select: none;
     background-color: rgba(79, 0, 95, 0.801);
     color: #fff;
     font-weight: 600;
@@ -75,14 +76,11 @@ button{
     border-radius: 6px;
 }
 
-.button-add:hover{
+#button-add:hover{
     background-color: #ddd;
     color: rgba(79, 0, 95, 0.801);
 }
 
-.button-add:active{
-    padding: 8px;
-}
 
 .todo-list{
     padding: 40px 55px 40px 20px;
