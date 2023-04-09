@@ -1,24 +1,7 @@
-*,
-*::before,
-*::after{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body{
     background-color: #ddd;
     font-family: 'Work Sans', sans-serif;
-}
-
-ul,
-li{
-    list-style: none;
-}
-
-button{
-    cursor: pointer;
-    transition: all 0.3s;
+    user-select: none;
 }
 
 .container{
@@ -28,12 +11,14 @@ button{
 }
 
 .title{
-    user-select: none;
     text-align: center;
-    padding: 10px 0;
+    padding: 30px 0;
     color: #fff;
     background-color: rgba(79, 0, 95, 0.801);
     border-radius: 6px 6px 0 0;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 .inner-content{
@@ -44,7 +29,6 @@ button{
 }
 
 .text-explained{
-    user-select: none;
     padding: 10px 0;
     color: rgba(79, 0, 95, 0.801);
     font-weight: 600;
@@ -66,7 +50,6 @@ button{
 }
 
 #button-add{
-    user-select: none;
     background-color: rgba(79, 0, 95, 0.801);
     color: #fff;
     font-weight: 600;
@@ -90,7 +73,7 @@ button{
     gap: 15px;
 }
 
-.todo{
+li{
     padding: 5px 0;
     display: flex;
     justify-content: space-between;
